@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retro Audio Shop</title>
+	<link rel="stylesheet" type="text/css" href="files/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body onload="cart_page_load()">
+	<header>
+			<div class="header__logo" style="cursor: pointer;" onclick="location.href='/'"><img src="files/png/logo.png" alt=""></div>		
+			<div class="header__title">VINTAGE MUSIC SHOP</div>					
+	</header>
+	<div class="cart">
+		<div class="container">
+			
+
+			<form method="post" action="mailto:denysenko.nikita@stud.onu.edu.ua" enctype="text/plain">
+				<div class="cart__item">
+					<div class="cart__image">
+						<img src="" alt="Image">
+					</div>
+					<div class="cart__text">
+						<div name="title" class="cart__title"></div>
+						<div name="price" class="cart__price"></div>
+					</div>
+				</div>
+				<fieldset>
+					<label>
+						Your Name and Surname<p>*</p>
+						<input type="text" name='name' placeholder="Your Name & Surname" required>						
+					</label>
+
+					<label>
+						Your Email<p>*</p>
+						<input type="email" name='mail' placeholder="Email" required>						
+					</label>
+
+					<label>
+						Your Phone Number
+						<input type="phone" name='phone' placeholder="Phone">						
+					</label>				
+					
+					<input type="text" name="title" class="form__titleinput" style="display: none;">
+					<label class="form__reqier"><p>*</p> - requier field</label>
+				</fieldset>
+				<input type="submit" name="submit" value='Confirm Order'>				
+			</form>						
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer__row">
+			<div class="footer__element">Denysenko Nikita</div>
+			<div class="footer__element">122 `Computer Science`</div>
+			<div class="footer__element">3th course</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="files/js/cart.js"></script>      		
+</body>
+</html>
